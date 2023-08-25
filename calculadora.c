@@ -25,7 +25,8 @@ int main(){
       resultado = valor1 / valor2;
     } else if(operacao == '%'){
       resultado = valor1 % valor2;
-    }
+    } else
+      printf("OPERACAO INVALIDA!!!\n");
 
     printf("resultado: %d\n", resultado);
     printf("operacao: %c\n", operacao);
