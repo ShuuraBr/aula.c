@@ -14,22 +14,31 @@ int main(){
     scanf("%d", &valor1);
     printf("Valor 2:\n");
     scanf("%d", &valor2);
-
-    if(operacao == '+'){
-    resultado = valor1 + valor2;
-    } else if(operacao == '-'){
-      resultado = valor1 - valor2;
-    } else if(operacao == '*'){
-      resultado = valor1 * valor2;
-    } else if(operacao == '/'){
-      resultado = valor1 / valor2;
-    } else if(operacao == '%'){
-      resultado = valor1 % valor2;
-    } else
-      printf("OPERACAO INVALIDA!!!\n");
-
-    printf("resultado: %d\n", resultado);
     printf("operacao: %c\n", operacao);
+    
+    if(operacao == '+'){
+    printf("resultado: %d\n", valor1 + valor2);
+    } else if(operacao == '-'){
+      printf("resultado: %d\n", valor1 - valor2);
+    } else if(operacao == '*'){
+      printf("resultado: %d\n", valor1 * valor2);
+    } else if(operacao == '/'){
+      printf("resultado: %d\n", valor1 / valor2);
+    } else if(operacao == '%'){
+      printf("resultado: %d\n", valor1 % valor2);
+    }else if(operacao == 'c'){
+       if(valor1 > valor2){
+       printf("%d e maior que %d\n", valor1, valor2);
+    } else if(valor1 < valor2){
+       printf("%d e menor que %d\n", valor1, valor2);
+    } else if(valor1 == valor2){
+       printf("%d e igual a %d\n", valor1, valor2); 
+    } else 
+      printf("OPERACAO INVALIDA!!!\n");
+    }
+
+    
+    
 
     //SOMA: resultado = valor1 + valor2;
     //SUBTRACAO: resultado = valor1 - valor2;
